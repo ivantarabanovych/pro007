@@ -1,7 +1,10 @@
-let numbers = [];
+let colors = ["червоний", "синій", "зелений", "жовтий", "чорний"];
+let indexOfGreen = colors.indexOf("зелений");
+console.log(`${indexOfGreen}`);
 
-for(i = 1; i<=10; i++){
-    numbers.push(i);
+let indexToRemove = colors.indexOf("чорний");
+if(indexToRemove !== -1){
+    colors.splice(indexToRemove, 1);
 }
 
-console.log(numbers);
+console.log(colors);
