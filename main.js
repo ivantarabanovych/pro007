@@ -1,10 +1,12 @@
-let colors = ["червоний", "синій", "зелений", "жовтий", "чорний"];
-let indexOfGreen = colors.indexOf("зелений");
-console.log(`${indexOfGreen}`);
+let fruits = ["яблуко", "банан", "апельсин", "груша", "ківі"];
+fruits.sort();
+console.log(fruits)
 
-let indexToRemove = colors.indexOf("чорний");
-if(indexToRemove !== -1){
-    colors.splice(indexToRemove, 1);
-}
+let filterFruits = fruits.filter(fruit => fruit.length > 5)
+console.log(filterFruits)
 
-console.log(colors);
+let newArray = fruits.map(fruit => fruit.toUpperCase());
+console.log(newArray)
+
+let combineArray = fruits.reduce((accumulator, currentValue) => accumulator  + "-" + currentValue);
+console.log(combineArray)
